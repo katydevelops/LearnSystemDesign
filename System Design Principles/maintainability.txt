@@ -1,0 +1,28 @@
+Maintainability
+
+- refers to the ease with which a system can be modified to correct faults, improve performance or adapt to a changed environment. It ensures that the system can be efficiently maintained over its lifecycle.
+
+
+Key Aspects
+
+    - Modularity: designing the system in self-contained modules that can be developed, tested and maintained independently 
+
+    - Documentation: providing clear and comprehensive documentation for the system's architecture, code and operational procedures.
+
+    - Code Quality: writing clean, readable and well organized code that follows best practices and coding standards.
+
+    - Testing: implementing thorough testing strategies, including unit tests, integration tests and automated tests to ensure that changes do not introduce new errors.
+
+
+Strategies for Maintainability
+
+    - Version Control: using version control systems like Git to manage changes and collaborate effectively 
+
+    - Continuous Integration/Continuous Deployment (CI/CD): automating the integration and deployment process to quickly and safely deliver changes
+
+    - Code Reviews: Regularly reviewing code changes to ensure they meet quality standards and catch issues early
+
+    - Refactoring: continuously improving the codebase by restructuring existing code without changing its external behavior 
+
+
+Building a maintainable system requires an initial investment in good tools and practices. Maintainability often depends on how well the development team collaborates and adheres to agreed-upon standards. While it may requirement more effort upfront, a maintainable system reduces technical debt and long-term maintenance costs.
