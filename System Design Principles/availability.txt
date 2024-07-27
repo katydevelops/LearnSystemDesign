@@ -1,0 +1,29 @@
+Availability
+
+- refers to the ability of a system to be operational and accessible when required for use. It is often expressed as a % of uptime in a given year.
+
+Key Metrics
+    - Uptime: amount of time the system is operational and accessible when required for use 
+        - High Availability = aim for 99.99% (aka four nines) or higher
+
+    - Mean Time Between Failures (MTBF): average time between system failures
+
+    - Mean Time to Repair (MTTR): average time it takes to repair a system after a failure
+
+
+Strategies for High Availability:
+    - Redundancy: having backup components or systems that can take over in case of failure; examples would be redundant servers, databases and network paths
+
+    - Failover: automatically switching to a redundant or standby system when the primary system fails
+
+    - Load Balancing: ensuring that no single server is overloaded, thus reducing the risk of downtime
+
+    - Data Replication: keeping copies of data in multiple locations to ensure data availability even if one location fails
+
+
+Considerations:
+    - Cost: high availability systems often require significant investment in infrastructure and management 
+
+    - Complexity: implementing redundancy, failover mechanisms and replication can add complexity to the system Design
+    
+    - Performance Trade-offs : some high availability techniques, like data replication, can impact system performance
