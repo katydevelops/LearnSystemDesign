@@ -1,0 +1,26 @@
+Scalability
+
+- refers to the ability of a system to handle a growing amount of work or its potential to be enlarged to accommodate that growth. It ensures that the system can maintain or improve its performance and efficiency as the load increase.
+
+
+Types of Scalability
+    - Vertical Scalability (Scaling Up): Adding more power (CPU, RAM) to an existing machine - i.e. upgrading a server with more memory or a faster processor
+
+    - Horizontal Scalability (Scaling Out): Adding more machines to a system to distribute the load - i.e. adding additional numbers of servers to a network 
+
+
+Key Concepts
+    - Load Balancing: distributing incoming network traffic across multiple servers to ensure no single server becomes overwhelmed
+
+    - Partitioning: Dividing a database or application into smaller, more manageable pieces. This can be done through sharding (breaking the database into small shards) or Microservices (breaking the application into smaller services)
+
+    - Caching: Storing copies of data in a cache or temporary storage to reduce the load on the primary database and speed up data retrieval.
+
+
+Things to Consider with Scalability:
+
+    - Cost: Horizontal scaling often involves higher operational costs compared to vertical scaling. 
+
+    - Complexity: Horizontal scaling can add complexity in terms of managing multiple servers and ensuring data consistency across them
+
+    - Application Design: Some apps are easier to scale horizontally while others benefit more from vertical scaling.
