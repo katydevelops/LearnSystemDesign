@@ -1,0 +1,42 @@
+Layered or n-tier Architecture
+
+- Layered architecture organizes an application into a set of layers (or tiers), each with a specific responsibility. These layers are arranged in a hierarchical manner, where each layer provides servers to the layer above it and consumes services from the layer below it. 
+
+
+Common Layers:
+
+    - Presentation Layer (User Interface): manages user interaction and displays info to the user. Responsibilities include handling user input, rendering data ot the user and navigation logic
+    
+    - Application Layer (Service Layer): coordinates application activities, processes commands and performs business logic. Components can include controllers and services and responsibilities include business logic, process management, and user requests handling
+
+    - Business Logic Layer (Domain Layer): encapsulates the core business rules and data transformations. Components can include business entities, domain models and rules engines and responsibilities include business rules enforcement, data validation and transformations
+
+    - Data Access Layer (Persistence Layer): handles data storage and retrieval operations. Components include repositories, data access objects (DAOs), database connections and responsibilities include data storage, indexing, data integrity and backup
+    
+    - Database Layer: manages the actual storage of the data and includes data storage, indexing, data integrity and backup
+
+
+Characteristics
+    - Separation of Concerns: each layers has a distinct responsibility, reducing complexity and making the application easier to understand and maintain
+
+    - Modularity: layers can be developed, tested and modified independently, improving code reusability and maintainability
+
+    - Inter-Layer Communication: typically each layer communicates only with the layer directly below it, ensuring a clear structure
+
+
+Advantages: 
+    - Maintainability: changes in one layer do not impact other layers
+
+    - Testability: Layers can be independently tested, improving test coverage and reliability.
+
+    - Scalability: Different layers can be scaled independently, enhancing overall system performance 
+
+
+Disadvantages:
+    - Performance Overheard: can introduce overhead due to multiple layers of processing
+    
+    - Complexity: properly defining and managing layer interactions can be complexity
+
+    - Rigid Structure: inflexible design may require significant refactoring if requirements change drastically
+
+

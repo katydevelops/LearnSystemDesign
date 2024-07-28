@@ -1,0 +1,25 @@
+Client-Server Architecture
+
+- Client-server architecture divides an application into two main components: clients (which request services) and servers (which provide services)
+
+
+Characteristics:
+    - Separation of Concerns: clients handle user interaction while servers manage data and application logic
+
+    - Network Communication: clients and servers communicate over a network, typically using protocols like HTTP/HTTPS
+
+
+Advantages:
+    - Scalability: servers can be scaled to handle multiple client requests
+
+    - Centralized Control: easier to manage and update the server side of the application
+
+    - Security: sensitive data can be kept on the server, reducing the risk of exposure
+
+
+Disadvantages:
+    - Latency: network communication can introduce latency
+
+    - Single Point of Failure - if the server goes down, clients cannot access services
+    
+    - Server Load: high demand from clients can overload he server, requiring loan balancing and scaling solutions
