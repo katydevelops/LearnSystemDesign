@@ -1,0 +1,30 @@
+Monolithic
+
+- monolithic architecture is a traditional software architecture model where all components of an application are packaged and deployed as a single unit
+
+
+Characteristics:
+
+    - Single Codebase: all functionality is contained within a single codebase
+
+    - Tightly Coupled Components: components are interconnected and interdependent
+
+    - Single Deployment Unit: the entire application is deployed at once
+
+
+Advantages:
+
+    - Simplicity: easier to develop, test and deploy initially
+
+    - Performance: can have better performance due to fewer network calls between components
+
+    - Consistency: easier to maintain consistency and data integrity 
+
+
+Disadvantages:
+
+    - Scalability: difficult to scale individual components independently
+
+    - Complexity Over Time: as the application grows, the codebase can become large and unwieldy
+
+    - Deployment Risks: a change in one part of the application requires redeployment of the entire system, increasing the risk of downtime
