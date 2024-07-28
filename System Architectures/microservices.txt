@@ -1,0 +1,29 @@
+Microservices Architecture
+
+- Microservices break down a application into smaller, independent services that communicate over a network. Each service is responsible for a specific piece of functionality. 
+
+
+Characteristics:
+    - Decoupled Services: each service is self-contained and operates independently
+
+    - Specific Functionality: each service focuses on a specific business capability
+
+    - Independent Deployment: services can be developed, tests and deployed independently
+
+
+Advantages:
+    - Scalability: individual services can be scaled independently based on demand
+    
+    - Flexibility: easier to adopt new technologies and update services without affecting the entire system
+    
+    - Resilience: failure in one service doesn't necessarily affect the others
+
+
+Disadvantages:
+    - Complexity: increased complexity in managing multiple services, including network communication and data consistency
+
+    - Deployment Overhead: requires sophisticated deployment and monitoring infrastructure
+
+    - Inter-Service Communication: can introduce latency and require robust communication mechanisms
+
+    
