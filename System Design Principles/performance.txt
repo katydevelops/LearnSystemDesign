@@ -1,0 +1,23 @@
+Performance
+
+- refers to how well a system meets its objectives, particularly in terms of speed, responsiveness and resource efficiency. It measures how quickly a system processed requests and returns responses. 
+
+Key Metrics:
+    - Latency: the time taken to process a single request. Lower latency means faster response time. 
+
+    - Throughput: the number of requests a system can handle in a given period. Higher throughput means the system can process more requests.
+
+    - Resource Utilization: the efficiency with which a system uses its resources (CPU, memory, disk, network) to perform tasks.
+
+
+Strategies for Improving Performance
+    - Caching: reducing the need to fetch data from slower storage by storing frequently accessed data in cache. 
+
+    - Load Balancing: distributing requests across multiple servers to prevent any single sever form becoming a bottleneck. 
+
+    - Database Optimization: indexing, query optimization and proper schema design to speed up database operations 
+
+    - Asynchronous Processing: offloading time-consuming tasks to background processes to improve the responsiveness of the main application.
+
+
+Performance improvements can sometimes lead to trade-offs in other areas like maintainability or scalability. Continuously monitor system performance and profile code to identify and address bottlenecks. Balance performance optimizations with the need to provide a good user experience.
