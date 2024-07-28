@@ -1,0 +1,38 @@
+Relational Databases (SQL)
+
+- use a structured query language (SQL) for defining and manipulating data; store data in tables with rows and columns, where each row represents a record and each column represents an attribute of the record
+
+
+Key Concepts
+    - Tables: fundamental structure for storing data, organized into rows and columns 
+
+    - Primary Keys: unique identifiers for each record in a tables
+    
+    - Foreign Keys: references to primary keys in other tables, used to establish relationship between tables 
+
+    - Normalization: process of organizing data to reduce redundancy and improve data integrity
+
+    - Acid Properties: ensures transactions are processed reliably 
+
+        Atomicity: ensures that a transaction either completes entirely or doesn't happen at all; there's no midway where transactions complete partially
+
+        Consistency: maintains integrity constraints, ensuring the database remains consistent before and after a transaction; it refers to the correctness of the database
+
+        Isolation: allows multiple transactions to occur concurrently without effecting the database consistency; transactions execute independently without interference
+
+        Durability: guarantees that once a transaction commits,  its changes are permanent - even in the face of system failures
+
+
+Advantages
+    - Structured Data: well-suited for structured data with clear relationshis
+
+    - Data Integrity: strong consistency and data integrity through constraints and Normalization
+
+    - Standardized language: SQL is a powerful and standardized query language
+
+
+Disadvantages
+    - Scalability: Horizontal scaling can be challenging 
+
+    - Complexity: requires careful schema design and management
+

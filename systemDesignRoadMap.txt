@@ -14,14 +14,16 @@ System Architectures
     - Microservices
     - Event-driven
     - Client-server
-    - Data Storage Options
+    - Layered or n-tier
 
-Relational Databases (SQL)
+Data Storage Options
+    - Relational Databases (SQL)
+    - ORMs
     - NoSQL Databases (key-value, document, graph)
     - Data Warehousing
-    - Networking Fundamentals
 
-HTTP/HTTPS
+Networking Fundamentals
+    - HTTP/HTTPS
     - TCP/IP
     - DNS
     - Load Balancing
