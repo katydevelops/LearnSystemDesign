@@ -1,0 +1,27 @@
+Event-Driven Architecture
+
+- Event-driven architecture (EDA) is a design pattern where components communicate by producing and consuming events. An event represents a significant change in state
+
+
+Characteristics:
+    - Events as Communication: components generate and respond to events
+
+    - Decoupled Components: components are loosely coupled, interacting primarily through Events
+
+    - Asynchronous Processing: events are often processed asynchronously, allowing for high scalability and responsiveness
+
+
+Advantages:
+    - Scalability: naturally supports scaling processing events in parallel
+
+    - Flexibility: easy to add new event consumers without modifying existing producers 
+
+    - Responsiveness: can handle a high volume of events with low latency
+
+
+Disadvantages:
+    -  Complexity: managing event flows and ensuring event consistency can be challenging
+
+    - Debugging: tracing and debugging issues across multiple event-driven components can be difficult
+
+    - Event Management: requires robust handling and monitoring infrastructure
