@@ -1,0 +1,16 @@
+NoSQL Databases
+
+- designed to handle large volumes of unstructured or semi-structured data. They are optimized for horizontal scaling and provide flexible schema designs
+
+- They use key-value stores: use a simple data model where each record is a pair consisting of a unique key and its associated value
+
+    - Keys: unique identifies for each record
+    - Values: data associated with keys, which can be of any type (strings, numbers, objects, etc)
+
+
+Advantages
+    - Performance: extremely fast read and write operations
+    - Scalability: easy to scale horizontally
+
+Disadvantages
+    - Simplicity: limited querying capabilities and structure
