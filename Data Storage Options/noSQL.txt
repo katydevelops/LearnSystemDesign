@@ -2,11 +2,14 @@ NoSQL Databases
 
 - designed to handle large volumes of unstructured or semi-structured data. They are optimized for horizontal scaling and provide flexible schema designs
 
-- They use key-value stores: use a simple data model where each record is a pair consisting of a unique key and its associated value
+
+Different Types of NoSQL:
+
+1. Key-value stores: use a simple data model where each record is a pair consisting of a unique key and its associated value 
+    Examples: Redis, Amazon DynamoDB, Riak
 
     - Keys: unique identifies for each record
     - Values: data associated with keys, which can be of any type (strings, numbers, objects, etc)
-
 
 Advantages
     - Performance: extremely fast read and write operations
@@ -14,3 +17,57 @@ Advantages
 
 Disadvantages
     - Simplicity: limited querying capabilities and structure
+
+
+
+2. Document Stores
+    - manage data in semi-structured format, typically JSON, BSON ox XML, allowing for nested structures and varied data types within documents
+        Examples: MongoDB, CouchDB, Amazon DocumentDB
+
+    Documents - individual records that contain data in JSON, BSON, XML format
+    Collections - group of documents, analogous to tables in relational databases
+
+
+    Advantages 
+        - Flexibility: schema-less design allows for varied document structures 
+        - Scalability: easy to scale horizontally
+
+    Disadvantages
+        - Consistency: may offer eventual consistency instead of strong consistency
+
+
+3. Graph databases
+    - use graph structures to represent and store data, with nodes, edges and properties. They are optimized for traversing and querying relationships between data points.
+        Examples: Neo4j, Amazon Neptune, Orient DB
+
+    Nodes: entities or objects in the graph
+    Edges: relationships between nodes
+    Properties: attributes of nodes and edges
+
+    Advantages
+        Relationships: efficiently handles complex relationship and queries
+        Flexibility: Schema-less design allows for easy data model changes
+
+    Disadvantages
+        Complexity: can be more complex to design and query
+
+
+4. Column-Family Stores
+    - aka columnar databases; store data in columns rather than rows. Structure is designed to efficiently handle large volumes of data and provide high-speed access to specific columns within the database
+        Examples: Apache Cassandra, HBase, ScyllaDB
+
+    Column Family: Collection of columns that are logically related and stored together; data within a family is stored on disk together, which optimizes read and write performance for columns within the same family
+
+    Advantages:
+        Efficient read and write: data is stored in a column-oriented fashion
+        Scalability: easy to scale horizontally by adding more nodes
+        Flexibility: Schema-less design accommodates changing data requirements
+
+    Disadvantages:
+        Complexity: requires careful design and tuning to optimize performance and storage
+        Learning Curve: steeper learning curve compared to traditional relational databases 
+        Limited Query Capabilities: Less flexible querying compared to SQL databases
+
+
+
+
