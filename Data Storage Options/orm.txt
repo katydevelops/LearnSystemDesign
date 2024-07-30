@@ -1,0 +1,28 @@
+Object-Relational Mapping (ORM)
+
+- technique that allows developers to interact with a relational database using an object-oriented paradigm. It abstracts the database interactions, enabling developers to work with database records as if they were objects
+
+
+Key Concepts
+    - Entities: objects that represent database tables
+    
+    - Attributes: properties of entities that represent columns in tables
+
+    - Relationships: associations between entities that mirror foreign key Relationships
+
+    - Query Abstraction: high-level methods to perform CRUD operations without writing raw SQL
+
+
+Advantages
+    - Productivity: reduces boilerplate code and improves development speed
+
+    - Maintainability: easier to manage database interactions within the application code
+
+    - Portability: abstracts database-specific details, allowing for easier database switching
+
+
+Disadvantages
+    - Performance: may introduce overhead and inefficiencies compared to raw SQL
+
+    - Complex Queries: can be less efficient for complex queries or operations
+    

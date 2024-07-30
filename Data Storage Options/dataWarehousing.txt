@@ -1,0 +1,23 @@
+Data Warehouse
+
+- involves the storage of large volumes of data from various sources in a centralized repository, optimized for querying and analysis.
+
+
+Key Concepts
+    - ETL (Extract, Transform, Load): the process of extracting data from source systems, transforming it to fit operational needs and loading it into the data warehouse
+
+    - Data Marts: subsets of data warehouses, focused on specific business areas or departments
+
+    - Olap (Online Analytical Processing): tools and techniques for analyzing data stored in data warehouses
+
+
+Advantages
+    - Analysis: optimized for complex queries and data analysis 
+    - Integration: consolidates data from multiple sources for comprehensive insights
+
+Disadvantages:
+    - Cost: can be expensive to implement and maintain
+    - Complexity: requires significant effort to design and manage
+
+
+Examples: Amazon Redshift, Google BigQuery, Snowflake, Microsoft Azure Synapse Analytics
