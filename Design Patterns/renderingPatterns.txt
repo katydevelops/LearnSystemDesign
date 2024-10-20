@@ -22,3 +22,10 @@ Rendering Patterns for Web Apps
     ISR combines the advantages of SSG and SSR - instead of regenerating static content for every change, only parts of the static page are regenerated periodically or on-demand. ISR allows you to update static content incrementally, without requiring a full page load. ISR: site built statically using SSG, static site is deployed, updates are made to individual pages or components, the updated content is revalidated at runtime.  Advantages are faster page loads, improved security, low server costs, easy scaling and fresh content. The disadvantages are the setup and configuration and limited dynamic content. 
         Ideal for blogs with frequently updated content, e-commerce sites with changing inventory and news sites
             Examples: Next.js, Vercel, Netlify, Gatsby
+
+
+5. Progressive Hydration
+    Progressive Hydration is a rendering technique where parts of a page become interactive incrementally instead of all at once. This is useful for large pages with complex components to avoid overwhelming the browser which minimizes the time it takes for the page to become interactive. Progressive hydration breaks down the hydration process into smaller, manageable chunks allowing for the page to become interactive as fast as possible. PH: server sends the initial html structure of the page, the browser renders the most critical parts of the page first, JS code is then executed incrementally, adding interactivity to specific sections or components as they become visible, lazy loading is initialized which means non-essential components or sections are loaded and hydrated only when needed to reduce initial load times. Advantages are improved user experience, reduced initial load times, better performance and enhanced SEO. Disadvantages are complexity, debugging issues and browse support. 
+        React, Next.js, Angular and Vue.js can all implement progressive hydration 
+
+
