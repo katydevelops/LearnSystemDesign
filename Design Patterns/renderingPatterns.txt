@@ -5,7 +5,14 @@ Rendering Patterns for Web Apps
         CSR is ideal for SPAs's with dynamic, interactive interfaces; real-time applications such as live updates, gaming or chat Apps
             - Examples: React, Angular, Vue.js, Ember.js
 
+
 2. Server-Side Rendering 
     In SSR, the entire HTML of page is generated on the server and sent to the browser, which means users see content immediately upon loading. Client requests webpage, server receives request, processes it and generates the HTML, the server uses a templating engine to render HTML dynamically, the server send the rendered HTML to the client and the client's browser executes the JS code to make the page interactive. The benefit is better SEO because the server sends a fully rendered HTML page, faster initial load and improved accessibility. The disadvantages are increased server loads, slower subsequent interactions and complexity.
         Suitable for static websites or blogs, e-commerce sites, complex Apps
             Examples: Next.js, Nuxt.js, Gatsby, React Server Components
+
+
+3. Static Site Generation 
+    SSG is a pattern where HTML is pre-generated at build time and stored as static files rather than being generated dynamically on each request. These static files are then served when a user request the page, resulting in super-fast page loads. SSG: developer runs build command, SSG tool fetches required data from API/database/files, SSG tool generates static HTML for each page, the static HTML files are deployed to a hosting platform. Advantages include faster page loads, improved security as attack surface is reduced as there is no dynamic server-side code, require minima server resources, allow for easy scaling with high traffic without performance degradation and better SEO due to search engines being able to crawl static HTML. The disadvantages include: static sites struggle with dynamic, real-time content and any update requires re-running the build process. 
+        Ideal for blogs with infrequently changing content, documentation sites with static content, personal websites/portfolios, some ecommerce sites
+            Examples: Next.js (with static site generation), Gatsby, Hugo, Jekyll, Eleventy and Nuxt.js (with Static Site Generation)
