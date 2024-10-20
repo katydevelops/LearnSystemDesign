@@ -29,3 +29,6 @@ Rendering Patterns for Web Apps
         React, Next.js, Angular and Vue.js can all implement progressive hydration 
 
 
+6. Streaming Rendering
+    With streaming, the server send HTML to the browser in chunks. Instead of waiting for the whole page to be ready, partial HTML content is rendered progressively as it arrives. This approach enables faster page loads, improved user experience and better SEO. SR: server generates initial HTML structure of the page, server breaks down HTML into smaller chunks, typically based on page sections or components, server sends each chunk to the client as it becomes available using HTTP chunked encoding or WebSockets, the browser renders each chunk incrementally, updating the page as new chunks arrive. Advantages are faster page loads, improved user experience, better SEO and reduced server loads. Challenges include complexity, buffering and caching, error handling and browser support.
+        Examples: React Server Components, Next.js, Angular Universal, Vue.js Server-side Rendering and Node.js streams
