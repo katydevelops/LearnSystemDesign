@@ -14,5 +14,11 @@ Rendering Patterns for Web Apps
 
 3. Static Site Generation 
     SSG is a pattern where HTML is pre-generated at build time and stored as static files rather than being generated dynamically on each request. These static files are then served when a user request the page, resulting in super-fast page loads. SSG: developer runs build command, SSG tool fetches required data from API/database/files, SSG tool generates static HTML for each page, the static HTML files are deployed to a hosting platform. Advantages include faster page loads, improved security as attack surface is reduced as there is no dynamic server-side code, require minima server resources, allow for easy scaling with high traffic without performance degradation and better SEO due to search engines being able to crawl static HTML. The disadvantages include: static sites struggle with dynamic, real-time content and any update requires re-running the build process. 
-        Ideal for blogs with infrequently changing content, documentation sites with static content, personal websites/portfolios, some ecommerce sites
+        Ideal for blogs with infrequently changing content, documentation sites with static content, personal websites/portfolios, some e-commerce sites
             Examples: Next.js (with static site generation), Gatsby, Hugo, Jekyll, Eleventy and Nuxt.js (with Static Site Generation)
+
+
+4. Incremental Static Regeneration (ISR)
+    ISR combines the advantages of SSG and SSR - instead of regenerating static content for every change, only parts of the static page are regenerated periodically or on-demand. ISR allows you to update static content incrementally, without requiring a full page load. ISR: site built statically using SSG, static site is deployed, updates are made to individual pages or components, the updated content is revalidated at runtime.  Advantages are faster page loads, improved security, low server costs, easy scaling and fresh content. The disadvantages are the setup and configuration and limited dynamic content. 
+        Ideal for blogs with frequently updated content, e-commerce sites with changing inventory and news sites
+            Examples: Next.js, Vercel, Netlify, Gatsby
