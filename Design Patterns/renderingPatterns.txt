@@ -1,5 +1,8 @@
 Rendering Patterns for Web Apps
 
+What is hydration?
+    - Hydration refers to the process of making a server-rendered page interactive by attaching JavaScript to the HTML that was sent from the server. In SSR, the server sends pre-rendered HTML and when the HTML arrives in the browser, JS must "hydrate" the static HTML to make it interactive. Until hydration completes, users can see the page but can't interact with it properly. The issues with hydration include performance bottlenecks if there's too much JS to hydrate (can cause unresponsive app) and FOUC: flash of unstyled content where that page looks good initially but interactive elements like forms/buttons may behave oddly until the hydration completes. Solutions like progressive hydration or lazy hydration help by hydrating only essential components first
+
 1. Client-Side Rendering
     In CSR, most of logic happens in the browser. The server sends a basic HTML file with a script tag and JS runs on the client side to fetch necessary data and render the page. Client requests website, server responds with HTML file with script tag, browser executes JS script and fetches data, JS renders page dynamically and populates HTML with received data. Subsequent interactions update the page dynamically without full page reloads. CSR experience quick initial load of HTML and smooth interactivity after the initial load but they are not optimized for good SEO due to search engining seeing an empty HTML at first due to rendering happening after JS is downloaded. Initial load times can also be slower to due JS execution and CSR relies on modern browser capabilities. 
         CSR is ideal for SPAs's with dynamic, interactive interfaces; real-time applications such as live updates, gaming or chat Apps
