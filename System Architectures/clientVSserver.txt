@@ -1,0 +1,10 @@
+What is client specific markup?
+
+Client-specific markup is any content that depends on the client's environment or user state at the time of rendering. This could include:
+    - dynamic or rapidly changing content like time stamps or system time
+    - info that depends on user information such as personalized greetings or user preferences
+    - browser-specific details like client-side-only APIs like window, navigator executed
+
+    The issue with these items above is that when you render such content on the server - it can become outdated by the time it reaches the client or might differ due to user-specific changes - causing mismatches between what the server rendered and what the client renders after rehydration. 
+
+    The HTML served by SSR is static and reflects a "snapshot in time" - the state of the data at the moment of rendering. But dynamic data continues to change after the server finishes the rendering. Once the client-side JavaScript takes over (through hydration), the app may re-render based on the latest data from an API, local state or user input. If the server-rendered HTML doesn't amtch what the client now expects, a mismatch occurs.
